@@ -5,33 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Goluuuuuuu & Booboooo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .myHeadings {
+            font-family: 'Sacramento', cursive;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo"> Ashim </a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </header>
-    <section class="banner">
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
-        <div class="wave wave4"></div>
-    </section>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-    </script>
+
+    <!-- Hero Section -->
+    <div class="w-full h-screen bg-gradient-to-br from-red-800 to-blue-800">
+        <div class="grid grid-cols-9 h-full">
+            <div class="col-span-2 flex justify-center items-center">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_hpndkcil.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                </lottie-player>
+            </div>
+            <div class="col-span-5 flex flex-col justify-center items-center text-white text-center">
+                <h1 data-aos="fade-down" data-aos-duration="2000" class="text-7xl myHeadings">
+                    Happy Anniversary My Love
+                </h1>
+                <div data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"
+                    class="w-16 h-1 rounded-full mx-auto my-3 bg-white"></div>
+                <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" class="myHeadings text-5xl mt-4">
+                    Goluuuuuuu & Booboooo
+                </h2>
+                <h3 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300" class="myHeadings text-5xl mt-2">
+                    Forever & Ever
+                </h3>
+            </div>
+            <div class="col-span-2 flex justify-center items-center">
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_Y8UeVt.json" background="transparent"
+                    speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+<script>
+    AOS.init();
+</script>
 
 </html>
